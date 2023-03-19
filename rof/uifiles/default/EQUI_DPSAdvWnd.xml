@@ -1,0 +1,437 @@
+<?xml version = "1.0"?>
+<XML ID = "EQInterfaceDefinitionLanguage">
+<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+
+   <Combobox item="DPS_MobList">
+      <ScreenID>DPS_MobList</ScreenID>
+      <Font>1</Font>
+      <DrawTemplate>WDT_Inner</DrawTemplate>
+      <AutoStretch>true</AutoStretch>
+
+      <RelativePosition>true</RelativePosition>
+      <AutoStretch>true</AutoStretch>
+      <LeftAnchorOffset>2</LeftAnchorOffset>
+      <TopAnchorOffset>2</TopAnchorOffset>
+      <RightAnchorOffset>2</RightAnchorOffset>
+      <BottomAnchorOffset>20</BottomAnchorOffset>
+      <TopAnchorToTop>true</TopAnchorToTop>
+      <BottomAnchorToTop>true</BottomAnchorToTop>
+      <LeftAnchorToLeft>true</LeftAnchorToLeft>
+      <RightAnchorToLeft>false</RightAnchorToLeft>
+   
+      <ListHeight>90</ListHeight>
+      <Button>BDT_Combo</Button>
+      <Style_Border>true</Style_Border>
+      <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+      </TextColor>
+    </Combobox>
+
+   <Listbox item = "DPS_TopList">
+      <ScreenID>DPS_TopList</ScreenID>
+      <DrawTemplate>WDT_Inner</DrawTemplate>
+      <AutoStretch>true</AutoStretch>
+      <TopAnchorOffset>23</TopAnchorOffset>
+      <LeftAnchorOffset>2</LeftAnchorOffset>
+      <RightAnchorOffset>2</RightAnchorOffset>
+      <BottomAnchorOffset>2</BottomAnchorOffset>
+      <RightAnchorToLeft>false</RightAnchorToLeft>
+      <BottomAnchorToTop>false</BottomAnchorToTop>
+      <TopAnchorToTop>true</TopAnchorToTop>
+      <LeftAnchorToLeft>true</LeftAnchorToLeft>
+      <Style_Border>true</Style_Border>
+      <Style_VScroll>true</Style_VScroll>
+      <Font>2</Font>
+      <Columns><Width>15</Width><Heading>#</Heading></Columns>
+      <Columns><Width>100</Width><Heading>Name</Heading></Columns>
+      <Columns><Width>100</Width><Heading>In DMG</Heading></Columns>
+      <Columns><Width>100</Width><Heading>In DPS</Heading></Columns>
+	  <Columns><Width>100</Width><Heading>Out DMG</Heading></Columns>
+	  <Columns><Width>100</Width><Heading>Out DPS</Heading></Columns>
+   </Listbox>
+
+   <Page item="DPS_Tab">
+      <ScreenID>DPS_Tab</ScreenID>
+      <RelativePosition>false</RelativePosition>
+      <DrawTemplate>WDT_Def</DrawTemplate>
+      <TabText>DPS</TabText>
+      <TabTextColor>
+         <R>255</R>
+         <G>255</G>
+         <B>255</B>
+      </TabTextColor>
+      <TabTextActiveColor>
+         <R>255</R>
+         <G>255</G>
+         <B>0</B>
+      </TabTextActiveColor>
+      <Pieces>DPS_TopList</Pieces>
+      <Pieces>DPS_MobList</Pieces>
+      <Style_Sizable>true</Style_Sizable>
+      <Location>
+         <X>0</X>
+         <Y>22</Y>
+      </Location>
+      <Size>
+         <CX>578</CX>
+         <CY>302</CY>
+      </Size>
+   </Page>
+
+   <Button item="DPS_ShowMeTopBox">
+                <ScreenID>DPS_ShowMeTopBox</ScreenID>
+                <Font>2</Font>
+                <Location>
+                        <X>5</X>
+                        <Y>5</Y>
+                </Location>
+                <Size>
+                        <CX>12</CX>
+                        <CY>12</CY>
+                </Size>
+                <Style_VScroll>false</Style_VScroll>
+                <Style_HScroll>false</Style_HScroll>
+                <Style_Transparent>false</Style_Transparent>
+                <Style_Border>false</Style_Border>
+                <Style_Checkbox>true</Style_Checkbox>
+		<Template>BDT_Checkbox</Template>
+        </Button>
+
+
+   <Label item="DPS_ShowMeTopLabel">
+      <ScreenID>DPS_ShowMeTopLabel</ScreenID>
+      <Font>3</Font>
+      <RelativePosition>true</RelativePosition>
+      <Location>
+         <X>20</X>
+         <Y>4</Y>
+      </Location>
+      <Size>
+         <CX>150</CX>
+         <CY>20</CY>
+      </Size>
+      <Text>ShowMeTop</Text>
+      <TextColor>
+         <R>255</R>
+         <G>255</G>
+         <B>255</B>
+      </TextColor>
+      <NoWrap>true</NoWrap>
+      <AlignCenter>false</AlignCenter>
+      <AlignRight>false</AlignRight>
+   </Label>
+
+   <Button item="DPS_ShowMeMinBox">
+                <ScreenID>DPS_ShowMeMinBox</ScreenID>
+                <Font>2</Font>
+                <Location>
+                        <X>25</X>
+                        <Y>25</Y>
+                </Location>
+                <Size>
+                        <CX>12</CX>
+                        <CY>12</CY>
+                </Size>
+                <Style_VScroll>false</Style_VScroll>
+                <Style_HScroll>false</Style_HScroll>
+                <Style_Transparent>false</Style_Transparent>
+                <Style_Border>false</Style_Border>
+                <Style_Checkbox>true</Style_Checkbox>
+		<Template>BDT_Checkbox</Template>
+        </Button>
+
+   <Label item="DPS_ShowMeMinLabel">
+      <ScreenID>DPS_ShowMeMinLabel</ScreenID>
+      <Font>3</Font>
+      <RelativePosition>true</RelativePosition>
+      <Location>
+         <X>40</X>
+         <Y>24</Y>
+      </Location>
+      <Size>
+         <CX>150</CX>
+         <CY>20</CY>
+      </Size>
+      <Text>Only &lt; # </Text>
+      <TextColor>
+         <R>255</R>
+         <G>255</G>
+         <B>255</B>
+      </TextColor>
+      <NoWrap>true</NoWrap>
+      <AlignCenter>false</AlignCenter>
+      <AlignRight>false</AlignRight>
+   </Label>
+
+   <Editbox item="DPS_ShowMeMinInput">
+      <ScreenID>DPS_ShowMeMinInput</ScreenID>
+      <DrawTemplate>WDT_Inner</DrawTemplate>
+      <Style_Border>true</Style_Border>
+      <Font>3</Font>
+      <RelativePosition>true</RelativePosition>
+      <Location>
+         <X>90</X>
+         <Y>22</Y>
+      </Location>
+      <Size>
+         <CX>40</CX>
+         <CY>20</CY>
+      </Size>
+      <TextColor><R>255</R><G>255</G><B>255</B></TextColor>
+   </Editbox>
+
+   <Button item="DPS_ClearAfterCombatBox">
+                <ScreenID>DPS_ClearAfterCombatBox</ScreenID>
+                <Font>2</Font>
+                <Location>
+                        <X>5</X>
+                        <Y>45</Y>
+                </Location>
+                <Size>
+                        <CX>12</CX>
+                        <CY>12</CY>
+                </Size>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Border>false</Style_Border>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Template>BDT_Checkbox</Template>
+    </Button>
+
+
+   <Label item="DPS_ClearAfterCombatLabel">
+      <ScreenID>DPS_ClearAfterCombatLabel</ScreenID>
+      <Font>3</Font>
+      <RelativePosition>true</RelativePosition>
+      <Location>
+         <X>20</X>
+         <Y>44</Y>
+      </Location>
+      <Size>
+         <CX>150</CX>
+         <CY>20</CY>
+      </Size>
+      <Text>Clear after Combat</Text>
+      <TextColor>
+         <R>255</R>
+         <G>255</G>
+         <B>255</B>
+      </TextColor>
+      <NoWrap>true</NoWrap>
+      <AlignCenter>false</AlignCenter>
+      <AlignRight>false</AlignRight>
+   </Label>
+
+   <Combobox item="DPS_ShowTotal">
+      <ScreenID>DPS_ShowTotal</ScreenID>
+      <Font>1</Font>
+      <DrawTemplate>WDT_Inner</DrawTemplate>
+
+      <RelativePosition>true</RelativePosition>
+      <Location>
+         <X>2</X>
+         <Y>83</Y>
+      </Location>
+      <Size>
+         <CX>125</CX>
+         <CY>18</CY>
+      </Size>
+   
+      <ListHeight>90</ListHeight>
+      <Button>BDT_Combo</Button>
+      <Style_Border>true</Style_Border>
+      <TextColor>
+            <R>255</R>
+            <G>255</G>
+            <B>255</B>
+      </TextColor>
+    </Combobox>
+
+   <Editbox item="DPS_EntTOInput">
+      <ScreenID>DPS_EntTOInput</ScreenID>
+      <DrawTemplate>WDT_Inner</DrawTemplate>
+      <Style_Border>true</Style_Border>
+      <Font>3</Font>
+      <RelativePosition>true</RelativePosition>
+      <Location>
+         <X>2</X>
+         <Y>142</Y>
+      </Location>
+      <Size>
+         <CX>25</CX>
+         <CY>20</CY>
+      </Size>
+      <TextColor><R>255</R><G>255</G><B>255</B></TextColor>
+   </Editbox>
+
+   <Label item="DPS_EntTOLabel">
+      <ScreenID>DPS_EntTOLabel</ScreenID>
+      <Font>3</Font>
+      <RelativePosition>true</RelativePosition>
+      <Location>
+         <X>30</X>
+         <Y>144</Y>
+      </Location>
+      <Size>
+         <CX>150</CX>
+         <CY>20</CY>
+      </Size>
+      <Text>Entry T/O</Text>
+      <TextColor>
+         <R>255</R>
+         <G>255</G>
+         <B>255</B>
+      </TextColor>
+      <NoWrap>true</NoWrap>
+      <AlignCenter>false</AlignCenter>
+      <AlignRight>false</AlignRight>
+   </Label>
+
+   <Button item="DPS_LiveUpdateBox">
+                <ScreenID>DPS_LiveUpdateBox</ScreenID>
+                <Font>2</Font>
+                <Location>
+                        <X>5</X>
+                        <Y>65</Y>
+                </Location>
+                <Size>
+                        <CX>12</CX>
+                        <CY>12</CY>
+                </Size>
+                <TextColor><Alpha>255</Alpha><R>0</R><G>0</G><B>0</B></TextColor>
+                <Style_VScroll>false</Style_VScroll>
+                <Style_HScroll>false</Style_HScroll>
+                <Style_Transparent>false</Style_Transparent>
+                <Style_Border>false</Style_Border>
+                <Style_Checkbox>true</Style_Checkbox>
+		<Template>BDT_Checkbox</Template>
+        </Button>
+
+
+   <Label item="DPS_LiveUpdateLabel">
+      <ScreenID>DPS_LiveUpdateLabel</ScreenID>
+      <Font>3</Font>
+      <RelativePosition>true</RelativePosition>
+      <Location>
+         <X>20</X>
+         <Y>64</Y>
+      </Location>
+      <Size>
+         <CX>150</CX>
+         <CY>20</CY>
+      </Size>
+      <Text>LiveUpdate</Text>
+      <TextColor>
+         <R>255</R>
+         <G>255</G>
+         <B>255</B>
+      </TextColor>
+      <NoWrap>true</NoWrap>
+      <AlignCenter>false</AlignCenter>
+      <AlignRight>false</AlignRight>
+   </Label>   
+
+   <Page item="DPS_Settings">
+      <ScreenID>DPS_Settings</ScreenID>
+      <RelativePosition>false</RelativePosition>
+      <DrawTemplate>WDT_Def</DrawTemplate>
+      <TabText>Settings</TabText>
+      <TabTextColor>
+         <R>255</R>
+         <G>255</G>
+         <B>255</B>
+      </TabTextColor>
+      <TabTextActiveColor>
+         <R>255</R>
+         <G>255</G>
+         <B>0</B>
+      </TabTextActiveColor>
+      <Style_Sizable>true</Style_Sizable>
+      <Location>
+         <X>0</X>
+         <Y>22</Y>
+      </Location>
+      <Size>
+         <CX>578</CX>
+         <CY>302</CY>
+      </Size>
+      <Pieces>DPS_ShowMeTopBox</Pieces>
+      <Pieces>DPS_ShowMeTopLabel</Pieces>
+      <Pieces>DPS_ShowMeMinLabel</Pieces>
+      <Pieces>DPS_ShowMeMinBox</Pieces>
+      <Pieces>DPS_ShowMeMinInput</Pieces>
+      <Pieces>DPS_ClearAfterCombatBox</Pieces>
+      <Pieces>DPS_ClearAfterCombatLabel</Pieces>
+      <Pieces>DPS_LiveUpdateBox</Pieces>
+      <Pieces>DPS_LiveUpdateLabel</Pieces>
+      <Pieces>DPS_EntTOInput</Pieces>
+      <Pieces>DPS_EntTOLabel</Pieces>
+      <Pieces>DPS_ShowTotal</Pieces>
+   </Page>
+
+
+   <Listbox item = "DPS_FightList">
+      <ScreenID>DPS_FightList</ScreenID>
+      <DrawTemplate>WDT_Inner</DrawTemplate>
+      <AutoStretch>true</AutoStretch>
+      <TopAnchorOffset>23</TopAnchorOffset>
+      <LeftAnchorOffset>2</LeftAnchorOffset>
+      <RightAnchorOffset>2</RightAnchorOffset>
+      <BottomAnchorOffset>2</BottomAnchorOffset>
+      <RightAnchorToLeft>false</RightAnchorToLeft>
+      <BottomAnchorToTop>false</BottomAnchorToTop>
+      <TopAnchorToTop>true</TopAnchorToTop>
+      <LeftAnchorToLeft>true</LeftAnchorToLeft>
+      <Style_Border>true</Style_Border>
+      <Style_VScroll>true</Style_VScroll>
+      <Font>2</Font>
+      <Columns><Width>15</Width><Heading>#</Heading></Columns>
+      <Columns><Width>15</Width><Heading>S</Heading></Columns>
+      <Columns><Width>75</Width><Heading>Name</Heading></Columns>
+      <Columns><Width>50</Width><Heading>Total</Heading></Columns>
+      <Columns><Width>50</Width><Heading>Time</Heading></Columns>
+   </Listbox>
+
+   <TabBox item="DPS_Tabs">
+      <ScreenID>Subwindows</ScreenID>
+      <RelativePosition>true</RelativePosition>
+      <AutoStretch>true</AutoStretch>
+      <LeftAnchorOffset>0</LeftAnchorOffset>
+      <TopAnchorOffset>0</TopAnchorOffset>
+      <RightAnchorOffset>0</RightAnchorOffset>
+      <BottomAnchorOffset>0</BottomAnchorOffset>
+      <TopAnchorToTop>true</TopAnchorToTop>
+      <BottomAnchorToTop>false</BottomAnchorToTop>
+      <LeftAnchorToLeft>true</LeftAnchorToLeft>fs
+      <RightAnchorToLeft>false</RightAnchorToLeft>
+
+      <TabBorderTemplate>FT_DefTabBorder</TabBorderTemplate>
+      <PageBorderTemplate>FT_DefPageBorder</PageBorderTemplate>
+
+      <Pages>DPS_Tab</Pages>
+      <Pages>DPS_Settings</Pages>
+   </TabBox>
+
+
+   <Screen item = "DPSAdvWnd">
+      <RelativePosition>false</RelativePosition>
+      <Location><X>170</X><Y>15</Y></Location>
+      <Size><CX>200</CX><CY>240</CY></Size>
+      <Style_VScroll>false</Style_VScroll>
+      <Style_HScroll>false</Style_HScroll>
+      <Style_Transparent>false</Style_Transparent>
+      <TooltipReference>This is the DPS Window.</TooltipReference>
+      <DrawTemplate>WDT_Rounded</DrawTemplate>
+      <Style_Titlebar>true</Style_Titlebar>
+      <Style_Closebox>true</Style_Closebox>
+      <Style_Minimizebox>true</Style_Minimizebox>
+      <Style_Border>true</Style_Border>
+      <Style_Sizable>true</Style_Sizable>
+      <Pieces>DPS_Tabs</Pieces>
+      <Text>DPS Display</Text>
+   </Screen>
+
+</XML> 

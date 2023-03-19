@@ -1,0 +1,214 @@
+<?xml version = "1.0"?>
+<!-- Monolithic Parameter File -->
+<!-- The composite section must come first and be followed by the schema -->
+
+<!-- defines for gauges set the EQType tag in Gauge definitions to one of these numbers -->
+<!-- GAUGETYPE_HP                1 -->
+<!-- GAUGETYPE_MANA              2 -->
+<!-- GAUGETYPE_STAMINA           3 -->
+<!-- GAUGETYPE_EXP               4 -->
+<!-- GAUGETYPE_ALTEXP            5 -->
+<!-- GAUGETYPE_TARGET            6 -->
+<!-- GAUGETYPE_CASTING           7 -->
+<!-- GAUGETYPE_BREATH            8 -->
+<!-- GAUGETYPE_MEMORIZE          9 -->
+<!-- GAUGETYPE_SCRIBE            10 -->
+<!-- GAUGETYPE_HP_PARTY1         11 -->
+<!-- GAUGETYPE_HP_PARTY2         12 -->
+<!-- GAUGETYPE_HP_PARTY3         13 -->
+<!-- GAUGETYPE_HP_PARTY4         14 -->
+<!-- GAUGETYPE_HP_PARTY5         15 -->
+<!-- GAUGETYPE_PET_HP            16 -->
+<!-- GAUGETYPE_PET_HP_PARTY1     17 -->
+<!-- GAUGETYPE_PET_HP_PARTY2     18 -->
+<!-- GAUGETYPE_PET_HP_PARTY3     19 -->
+<!-- GAUGETYPE_PET_HP_PARTY4     20 -->
+<!-- GAUGETYPE_PET_HP_PARTY5     21 -->
+<!-- GAUGETYPE_MUSIC_PROGRESS    22 -->
+<!-- GAUGETYPE_GROUPLEADEXP      23 -->
+<!-- GAUGETYPE_RAIDLEADEXP       24 -->
+<!-- GAUGETYPE_UNUSED            25 -->
+<!-- GAUGETYPE_COMBAT_EFFECT_TIME26 -->
+<!-- GAUGETYPE_TARGET_OF_TARGET  27 -->
+<!-- GAUGETYPE_RESPAWN_TIMER     28 -->
+<!-- GAUGETYPE_INCOMBAT_TIMER    29 -->
+<!-- GAUGETYPE_WEBWINDOW         30 -->
+<!-- GAUGETYPE_MANA_PARTY1       31 -->
+<!-- GAUGETYPE_MANA_PARTY2       32 -->			
+<!-- GAUGETYPE_MANA_PARTY3       33 -->
+<!-- GAUGETYPE_MANA_PARTY4       34 -->
+<!-- GAUGETYPE_MANA_PARTY5       35 -->
+<!-- GAUGETYPE_STA_PARTY1        36 -->
+<!-- GAUGETYPE_STA_PARTY2        37 -->
+<!-- GAUGETYPE_STA_PARTY3        38 -->
+<!-- GAUGETYPE_STA_PARTY4        39 -->
+<!-- GAUGETYPE_STA_PARTY5        40 -->
+
+<XML ID = "EQInterfaceDefinitionLanguage">
+	<Composite>
+		<Include>SIDL.xml</Include>
+		<Include>EQUI_Animations.xml</Include>
+		<Include>EQUI_Templates.xml</Include>
+		<Include>EQUI_CharacterCreate.xml</Include>
+		<Include>EQUI_BuffWindow.xml</Include>
+		<Include>EQUI_ChatWindow.xml</Include>
+		<Include>EQUI_ConfirmationDialog.xml</Include>
+		<Include>EQUI_CharacterListWnd.xml</Include>
+		<Include>EQUI_PlayerCustomizationWnd.xml</Include>
+		<Include>EQUI_GroupWindow.xml</Include>
+		<Include>EQUI_ItemDisplay.xml</Include>
+		<Include>EQUI_BreathWindow.xml</Include>
+		<Include>EQUI_NoteWindow.xml</Include>
+		<Include>EQUI_OptionsWindow.xml</Include>
+		<Include>EQUI_BookWindow.xml</Include>
+		<Include>EQUI_PlayerWindow.xml</Include>
+		<Include>EQUI_CastingWindow.xml</Include>
+		<Include>EQUI_TargetWindow.xml</Include>
+		<Include>EQUI_AAWindow.xml</Include>
+		<Include>EQUI_Inventory.xml</Include>
+		<Include>EQUI_CursorAttachment.xml</Include>
+		<Include>EQUI_CastSpellWnd.xml</Include>
+		<Include>EQUI_SpellBookWnd.xml</Include>
+		<Include>EQUI_FriendsWnd.xml</Include>
+		<Include>EQUI_PetInfoWindow.xml</Include>
+		<Include>EQUI_TrainWindow.xml</Include>
+		<Include>EQUI_BankWnd.xml</Include>
+		<Include>EQUI_Container.xml</Include>
+		<Include>EQUI_QuantityWnd.xml</Include>
+		<Include>EQUI_LootWnd.xml</Include>
+		<Include>EQUI_ActionsWindow.xml</Include>
+		<Include>EQUI_SkillsWindow.xml</Include>
+		<Include>EQUI_SkillsSelectWindow.xml</Include>
+		<Include>EQUI_TradeWnd.xml</Include>
+		<Include>EQUI_MerchantWnd.xml</Include>
+		<Include>EQUI_SelectorWnd.xml</Include>
+		<Include>EQUI_BazaarWnd.xml</Include>
+		<Include>EQUI_GiveWnd.xml</Include>
+		<Include>EQUI_TrackingWnd.xml</Include>
+		<Include>EQUI_HotButtonWnd.xml</Include>
+		<Include>EQUI_InspectWnd.xml</Include>
+		<Include>EQUI_SocialEditWnd.xml</Include>
+		<Include>EQUI_FeedbackWnd.xml</Include>
+		<Include>EQUI_BugReportWnd.xml</Include>
+		<Include>EQUI_BazaarSearchWnd.xml</Include>
+		<Include>EQUI_ColorPickerWnd.xml</Include>
+		<Include>EQUI_VideoModesWnd.xml</Include>
+		<Include>EQUI_TextEntryWnd.xml</Include>
+		<Include>EQUI_CompassWnd.xml</Include>
+		<Include>EQUI_GemsGameWnd.xml</Include>
+		<Include>EQUI_PlayerNotesWindow.xml</Include>
+		<Include>EQUI_LoadskinWnd.xml</Include>
+		<Include>EQUI_AlarmWnd.xml</Include>
+		<Include>EQUI_RaidWindow.xml</Include>
+		<Include>EQUI_RaidOptionsWindow.xml</Include>
+		<Include>EQUI_MusicPlayerWnd.xml</Include>
+		<Include>EQUI_FileSelectionWnd.xml</Include>
+		<Include>EQUI_BigBankWnd.xml</Include>
+		<Include>EQUI_JournalNPCWnd.xml</Include>
+		<Include>EQUI_JournalCatWnd.xml</Include>
+		<Include>EQUI_ShortDurationBuffWindow.xml</Include>
+		<Include>EQUI_StoryWnd.xml</Include>
+		<Include>EQUI_BodyTintWnd.xml</Include>
+		<Include>EQUI_GroupSearchWnd.xml</Include>
+		<Include>EQUI_MapViewWnd.xml</Include>
+		<Include>EQUI_MapToolbarWnd.xml</Include>
+		<Include>EQUI_EditLabelWnd.xml</Include>
+		<Include>EQUI_GuildManagementWnd.xml</Include>
+		<Include>EQUI_FellowshipWnd.xml</Include>
+		<Include>EQUI_TipWnd.xml</Include>
+		<Include>EQUI_AdventureRequestWnd.xml</Include>
+		<Include>EQUI_AdventureStatsWnd.xml</Include>
+		<Include>EQUI_AdventureLeaderboardWnd.xml</Include>
+		<Include>EQUI_FindLocationWnd.xml</Include>
+		<Include>EQUI_CombatAbilityWnd.xml</Include>
+		<Include>EQUI_CombatSkillsSelectWindow.xml</Include>
+		<Include>EQUI_TradeskillWnd.xml</Include>
+		<Include>EQUI_DynamicZoneWnd.xml</Include>
+		<Include>EQUI_TextMessageWindow.xml</Include>
+		<Include>EQUI_TributeBenefitWnd.xml</Include>
+		<Include>EQUI_TributeMasterWnd.xml</Include>
+		<Include>EQUI_TributeTrophyWnd.xml</Include>		
+		<Include>EQUI_LeadershipWnd.xml</Include>
+		<Include>EQUI_TargetOfTargetWindow.xml</Include>
+		<Include>EQUI_GmAttentionTextWnd.xml</Include>
+		<Include>EQUI_LargeDialogWnd.xml</Include>
+		<Include>EQUI_TaskWnd.xml</Include>
+		<Include>EQUI_TaskSelectWnd.xml</Include>
+		<Include>EQUI_AdvancedDisplayOptionsWnd.xml</Include>
+		<Include>EQUI_TitleWnd.xml</Include>
+		<Include>EQUI_VoiceMacroWnd.xml</Include>
+		<Include>EQUI_PvPLeaderBoardWnd.xml</Include>
+		<Include>EQUI_PvPStatsWnd.xml</Include>
+		<Include>EQUI_PointMerchantWnd.xml</Include>
+		<Include>EQUI_BarterWnd.xml</Include>
+		<Include>EQUI_BarterMerchantWnd.xml</Include>
+		<Include>EQUI_BarterSearchWnd.xml</Include>
+		<Include>EQUI_MailWindow.xml</Include>
+		<Include>EQUI_MailCompositionWindow.xml</Include>
+		<Include>EQUI_MailAddressBookWindow.xml</Include>
+		<Include>EQUI_MailIgnoreListWindow.xml</Include>
+		<Include>EQUI_ServerListWnd.xml</Include>
+		<Include>EQUI_BandolierWnd.xml</Include>
+		<Include>EQUI_PotionBeltWnd.xml</Include>
+		<Include>EQUI_LFGuildWnd.xml</Include>
+		<Include>EQUI_GuildBankWnd.xml</Include>
+		<Include>EQUI_TaskTemplateSelectWnd.xml</Include>
+		<Include>EQUI_RespawnWnd.xml</Include>
+		<Include>EQUI_AltStorageWnd.xml</Include>
+		<Include>EQUI_ItemExpTransferWnd.xml</Include>
+		<Include>EQUI_ProgressionSelectionWnd.xml</Include>
+		<Include>EQUI_MIZoneSelectWnd.xml</Include>
+		<Include>EQUI_EQMainWnd.xml</Include>
+		<Include>EQUI_AudioTriggersWindow.xml</Include>
+		<Include>EQUI_BlockedBuffWnd.xml</Include> 
+		<Include>EQUI_BlockedPetBuffWnd.xml</Include> 
+		<Include>EQUI_AuraWnd.xml</Include>
+		<Include>EQUI_GroupMentorWnd.xml</Include>
+		<Include>EQUI_SpellDisplay.xml</Include>
+		<Include>EQUI_RewardSelectionWnd.xml</Include>
+		<Include>EQUI_NewPointMerchantWnd.xml</Include>				 
+		<Include>EQUI_HtmlWnd.xml</Include>
+		<Include>EQUI_TCGWnd.xml</Include>
+		<Include>EQUI_TCGStartupWnd.xml</Include>
+		<Include>EQUI_ClaimWnd.xml</Include>
+		<Include>EQUI_LayoutCopyWnd.xml</Include>		
+		<Include>EQUI_VoiceActionBarWnd.xml</Include>
+		<Include>EQUI_MercenaryMerchantWnd.xml</Include>
+		<Include>EQUI_MercenaryManageWnd.xml</Include>
+		<Include>EQUI_MercenaryInfoWnd.xml</Include>
+		<Include>EQUI_TopLevelScreens.xml</Include>
+		<Include>EQUI_MarketplaceWnd.xml</Include>
+		<Include>EQUI_GuildCreationWnd.xml</Include>
+		<Include>EQUI_AchievementsWnd.xml</Include>
+		<Include>EQUI_AchievementWnd.xml</Include>
+		<Include>EQUI_NameChangeWnd.xml</Include>
+		<Include>EQUI_RaceChangeWnd.xml</Include>
+		<Include>EQUI_ExtendedTargetWindow.xml</Include>
+		<Include>EQUI_HeritageSelectionWnd.xml</Include>
+		<Include>EQUI_ObjectPreviewWnd.xml</Include>		
+		<Include>EQUI_RealEstateItemsWnd.xml</Include>
+		<Include>EQUI_RealEstateNeighborhoodWnd.xml</Include>
+		<Include>EQUI_RealEstatePlotSearchWnd.xml</Include>
+		<Include>EQUI_RealEstateManageWnd.xml</Include>
+		<Include>EQUI_RealEstatePurchaseWnd.xml</Include>
+		<Include>EQUI_RealEstateLayoutDetailsWnd.xml</Include>		
+		<Include>EQUI_VoteWnd.xml</Include>
+		<Include>EQUI_VoteResultsWnd.xml</Include>
+		<Include>EQUI_NameChangePetWnd.xml</Include>
+		<Include>EQUI_NameChangeMercWnd.xml</Include>
+		<Include>EQUI_SendMoneyWnd.xml</Include>
+		<Include>EQUI_IconSelectionWnd.xml</Include>
+		<Include>EQUI_AlertStackWnd.xml</Include>
+		<Include>EQUI_AlertWnd.xml</Include>
+		<Include>EQUI_HelpWnd.xml</Include>
+		<Include>EQUI_ZoneGuideWnd.xml</Include>		
+		<Include>EQUI_ZonePathWnd.xml</Include>
+		<Include>EQUI_AlertHistoryWnd.xml</Include>
+		<Include>EQUI_ShareWnd.xml</Include>
+		<Include>EQUI_AggroMeterWnd.xml</Include>
+		<Include>EQUI_BazaarConfirmationWnd.xml</Include>
+		<Include>EQUI_DPSAdvWnd.xml</Include>
+	</Composite>
+
+	<Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
+</XML>

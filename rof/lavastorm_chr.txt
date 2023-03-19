@@ -1,0 +1,14 @@
+13
+qcm,qeynos_chr
+qcf,qeynos_chr
+uni,lfaydark_chr
+cst,cst
+dvs,dvs
+dke,dke
+ldr,ldr
+tar,tar
+dre,dre
+lsp,lsp
+cwg,cwg
+snk,snk
+tre,southkarana_chr
