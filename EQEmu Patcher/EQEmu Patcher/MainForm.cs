@@ -289,38 +289,10 @@ namespace EQEmu_Patcher
                     return;
                 }
                 switch (hash)
-                {
-                    case "85218FC053D8B367F2B704BAC5E30ACC":
-                        currentVersion = VersionTypes.Secrets_Of_Feydwer;
-                        splashLogo.Image = Properties.Resources.sof;
-                        break;
-                    case "859E89987AA636D36B1007F11C2CD6E0":
-                    case "EF07EE6649C9A2BA2EFFC3F346388E1E78B44B48": //one of the torrented uf clients, used by B&R too
-                        currentVersion = VersionTypes.Underfoot;
-                        splashLogo.Image = Properties.Resources.underfoot;
-                        break;
-                    case "A9DE1B8CC5C451B32084656FCACF1103": //p99 client
-                    case "BB42BC3870F59B6424A56FED3289C6D4": //vanilla titanium
-                        currentVersion = VersionTypes.Titanium;
-                        splashLogo.Image = Properties.Resources.titanium;
-                        break;
-                    case "368BB9F425C8A55030A63E606D184445":
-                        currentVersion = VersionTypes.Rain_Of_Fear;
-                        splashLogo.Image = Properties.Resources.rof;
-                        break;
-                    case "240C80800112ADA825C146D7349CE85B":
-                    case "A057A23F030BAA1C4910323B131407105ACAD14D": //This is a custom ROF2 from a torrent download
+                {                   
+                    case "C03EAA6653A8468F567B093A16D97BE9": //Chainbreaker
                         currentVersion = VersionTypes.Rain_Of_Fear_2;
                         splashLogo.Image = Properties.Resources.rof;
-                        break;
-                    case "6BFAE252C1A64FE8A3E176CAEE7AAE60": //This is one of the live EQ binaries.
-                    case "AD970AD6DB97E5BB21141C205CAD6E68": //2016/08/27
-                    case "2FD5E6243BCC909D9FD0587A156A1165": //https://github.com/xackery/eqemupatcher/issues/20
-                    case "26DC13388395A20B73E1B5A08415B0F8": //Legacy of Norrath Custom RoF2 Client https://github.com/xackery/eqemupatcher/issues/16
-                    case "3B44C6CD42313CB80C323647BCB296EF": //https://github.com/xackery/eqemupatcher/issues/15
-                    case "513FDC2B5CC63898D7962F0985D5C207": //aslr checksum removed
-                        currentVersion = VersionTypes.Broken_Mirror;
-                        splashLogo.Image = Properties.Resources.brokenmirror;
                         break;
                     default:
                         currentVersion = VersionTypes.Unknown;
