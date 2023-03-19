@@ -33,20 +33,6 @@ namespace EQEmu_Patcher
         CancellationTokenSource cts;
         System.Diagnostics.Process process;
 
-        //Note that for supported versions, the 3 letter suffix is needed on the filelist_###.yml file.
-        public static List<VersionTypes> supportedClients = new List<VersionTypes> { //Supported clients for patcher
-            //VersionTypes.Unknown, //unk
-            //VersionTypes.Titanium, //tit
-            //VersionTypes.Underfoot, //und
-            //VersionTypes.Secrets_Of_Feydwer, //sof
-            //VersionTypes.Seeds_Of_Destruction, //sod
-            VersionTypes.Rain_Of_Fear, //rof
-            VersionTypes.Rain_Of_Fear_2 //rof
-            //VersionTypes.Broken_Mirror, //bro
-        }; 
-
-        private Dictionary<VersionTypes, ClientVersion> clientVersions = new Dictionary<VersionTypes, ClientVersion>();
-
         VersionTypes currentVersion;
 
        // TaskbarItemInfo tii = new TaskbarItemInfo();
@@ -117,9 +103,7 @@ namespace EQEmu_Patcher
             {
                 this.Height = 550;
             }
-            buildClientVersions();
             IniLibrary.Load();
-            detectClientVersion();
             isAutoPlay = (IniLibrary.instance.AutoPlay.ToLower() == "true");
             isAutoPatch = (IniLibrary.instance.AutoPatch.ToLower() == "true");
             chkAutoPlay.Checked = isAutoPlay;
@@ -138,34 +122,11 @@ namespace EQEmu_Patcher
 
             if (IniLibrary.instance.ClientVersion == VersionTypes.Unknown)
             {
-                detectClientVersion();
-                if (currentVersion == VersionTypes.Unknown)
-                {
-                    this.Close();
-                }
                 IniLibrary.instance.ClientVersion = currentVersion;
                 IniLibrary.Save();
             }
-            string suffix = "unk";
-            if (currentVersion == VersionTypes.Titanium) suffix = "tit";
-            if (currentVersion == VersionTypes.Underfoot) suffix = "und";
-            if (currentVersion == VersionTypes.Seeds_Of_Destruction) suffix = "sod";
-            if (currentVersion == VersionTypes.Broken_Mirror) suffix = "bro";
-            if (currentVersion == VersionTypes.Secrets_Of_Feydwer) suffix = "sof";
-            if (currentVersion == VersionTypes.Rain_Of_Fear || currentVersion == VersionTypes.Rain_Of_Fear_2) suffix = "rof";
+            string suffix = "rof";
 
-            bool isSupported = false;
-            foreach (var ver in supportedClients)
-            {
-                if (ver != currentVersion) continue;                
-                isSupported = true;
-                break;
-            }
-            if (!isSupported) {
-                MessageBox.Show("The server " + serverName + " does not work with this copy of Everquest (" + currentVersion.ToString().Replace("_", " ") + ")", serverName);
-                this.Close();
-                return;
-            }
 
             this.Text = serverName + " (Client: " + currentVersion.ToString().Replace("_", " ") + ")";
             progressBar.Minimum = 0;
@@ -275,66 +236,7 @@ namespace EQEmu_Patcher
             }
             cts.Cancel();
         }
-
-        private void detectClientVersion()
-        {
-            try
-            {
-
-                var hash = UtilityLibrary.GetEverquestExecutableHash(AppDomain.CurrentDomain.BaseDirectory);
-                if (hash == "")
-                {
-                    MessageBox.Show("Please run this patcher in your Everquest directory.");
-                    this.Close();
-                    return;
-                }
-                switch (hash)
-                {                   
-                    case "C03EAA6653A8468F567B093A16D97BE9": //Chainbreaker
-                        currentVersion = VersionTypes.Rain_Of_Fear_2;
-                        splashLogo.Image = Properties.Resources.rof;
-                        break;
-                    default:
-                        currentVersion = VersionTypes.Unknown;
-                        break;
-                }
-                if (currentVersion == VersionTypes.Unknown)
-                {
-                    if (MessageBox.Show("Unable to recognize the Everquest client in this directory, open a web page to report to devs?", "Visit", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
-                    {
-                        System.Diagnostics.Process.Start("https://github.com/Xackery/eqemupatcher/issues/new?title=A+New+EQClient+Found&body=Hi+I+Found+A+New+Client!+Hash:+" + hash);
-                    }
-                    StatusLibrary.Log($"Unable to recognize the Everquest client in this directory, send to developers: {hash}");
-                }
-                else
-                {
-                    //StatusLibrary.Log($"You seem to have put me in a {clientVersions[currentVersion].FullName} client directory");
-                }
-                
-                //MessageBox.Show(""+currentVersion);
-                //StatusLibrary.Log($"If you wish to help out, press the scan button on the bottom left and wait for it to complete, then copy paste this data as an Issue on github!");                
-            }
-            catch (UnauthorizedAccessException err)
-            {
-                MessageBox.Show("You need to run this program with Administrative Privileges" + err.Message);
-                return;
-            }
-        }
-
-        //Build out all client version's dictionary
-        private void buildClientVersions()
-        {
-            clientVersions.Clear();
-            clientVersions.Add(VersionTypes.Titanium, new ClientVersion("Titanium", "titanium"));
-            clientVersions.Add(VersionTypes.Secrets_Of_Feydwer, new ClientVersion("Secrets Of Feydwer", "sof"));
-            clientVersions.Add(VersionTypes.Seeds_Of_Destruction, new ClientVersion("Seeds of Destruction", "sod"));
-            clientVersions.Add(VersionTypes.Rain_Of_Fear, new ClientVersion("Rain of Fear", "rof"));
-            clientVersions.Add(VersionTypes.Rain_Of_Fear_2, new ClientVersion("Rain of Fear 2", "rof2"));
-            clientVersions.Add(VersionTypes.Underfoot, new ClientVersion("Underfoot", "underfoot"));
-            clientVersions.Add(VersionTypes.Broken_Mirror, new ClientVersion("Broken Mirror", "brokenmirror"));
-        }
-
-
+		
         private void btnStart_Click(object sender, EventArgs e)
         {
             PlayGame();
