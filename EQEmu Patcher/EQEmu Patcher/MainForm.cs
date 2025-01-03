@@ -13,7 +13,7 @@ using System.Threading;
 
 namespace EQEmu_Patcher
 {
-    
+
     public partial class MainForm : Form
     {
 
@@ -43,7 +43,6 @@ namespace EQEmu_Patcher
 
         private async void MainForm_Load(object sender, EventArgs e)
         {
-
             isLoading = true;
             version = Assembly.GetEntryAssembly().GetName().Version.ToString();
             Console.WriteLine($"Initializing {version}");
@@ -125,8 +124,7 @@ namespace EQEmu_Patcher
                 IniLibrary.instance.ClientVersion = currentVersion;
                 IniLibrary.Save();
             }
-            string suffix = "rof";
-
+            string suffix = "quarm";
 
             this.Text = serverName + " (Client: " + currentVersion.ToString().Replace("_", " ") + ")";
             progressBar.Minimum = 0;
@@ -138,7 +136,7 @@ namespace EQEmu_Patcher
                     if (Environment.OSVersion.Version.Major < 6) {
                         return;
                     }
-                    var taskbar = TaskbarManager.Instance;                    
+                    var taskbar = TaskbarManager.Instance;
                     taskbar.SetProgressValue(value, 10000);
                     taskbar.SetProgressState((value == 10000) ? TaskbarProgressBarState.NoProgress : TaskbarProgressBarState.Normal);
                 });
@@ -170,7 +168,7 @@ namespace EQEmu_Patcher
             }));
 
             string webUrl = $"{filelistUrl}{suffix}/filelist_{suffix}.yml";
-            
+
             string response = await DownloadFile(cts, webUrl, "filelist.yml");
             if (response != "")
             {
@@ -210,7 +208,7 @@ namespace EQEmu_Patcher
 
             FileList filelist;
 
-            using (var input = File.OpenText("filelist.yml"))
+            using (var input = File.OpenText($"{System.IO.Path.GetDirectoryName(Application.ExecutablePath)}\\filelist.yml"))
             {
                 var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
 
@@ -218,7 +216,7 @@ namespace EQEmu_Patcher
 
                 filelist = deserializer.Deserialize<FileList>(input);
             }
-            
+
             if (filelist.version != IniLibrary.instance.LastPatchedVersion)
             {
                 if (!isPendingPatch)
@@ -230,9 +228,10 @@ namespace EQEmu_Patcher
                 if (isAutoPlay) PlayGame();
             }
             isLoading = false;
-            if (File.Exists("eqemupatcher.png"))
+            var path = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\eqemupatcher.png";
+            if (File.Exists(path))
             {
-                splashLogo.Load("eqemupatcher.png");
+                splashLogo.Load(path);
             }
             cts.Cancel();
         }
@@ -281,7 +280,7 @@ namespace EQEmu_Patcher
         {
             path = path.Replace("/", "\\");
             if (path.Contains("\\")) { //Make directory if needed.
-                string dir = Application.StartupPath + "\\" + path.Substring(0, path.LastIndexOf("\\"));
+                string dir = System.IO.Path.GetDirectoryName(Application.ExecutablePath) + "\\" + path.Substring(0, path.LastIndexOf("\\"));
                 Directory.CreateDirectory(dir);
             }
             return await UtilityLibrary.DownloadFile(cts, url, path);
@@ -327,8 +326,8 @@ namespace EQEmu_Patcher
             StatusLibrary.Log($"Patching with patcher version {version}...");
             StatusLibrary.SetProgress(0);
             FileList filelist;
-             
-            using (var input = File.OpenText("filelist.yml"))
+
+            using (var input = File.OpenText($"{System.IO.Path.GetDirectoryName(Application.ExecutablePath)}\\filelist.yml"))
             {
                 var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
 
@@ -363,7 +362,7 @@ namespace EQEmu_Patcher
                         await w.WriteAsync(data, 0, data.Length, cts.Token);
                     }
                     StatusLibrary.Log($"Self update of {generateSize(data.Length)} will be used next run");
-                    
+
                 } catch (Exception e)
                 {
                     StatusLibrary.Log($"Self update failed {url}: {e.Message}");
@@ -384,7 +383,7 @@ namespace EQEmu_Patcher
 
                 StatusLibrary.SetProgress((int)(currentBytes / totalBytes * 10000));
 
-                var path = entry.name.Replace("/", "\\");
+                var path = Path.GetDirectoryName(Application.ExecutablePath)+"\\"+entry.name.Replace("/", "\\");
                 if (!UtilityLibrary.IsPathChild(path))
                 {
                     StatusLibrary.Log("Path " + path + " might be outside of your Everquest directory. Skipping download to this location.");
@@ -404,7 +403,7 @@ namespace EQEmu_Patcher
 
 
                 string url = filelist.downloadprefix + entry.name.Replace("\\", "/");
-                
+
                 string resp = await DownloadFile(cts, url, entry.name);
                 if (resp != "")
                 {
@@ -426,21 +425,22 @@ namespace EQEmu_Patcher
             {
                 foreach (var entry in filelist.deletes)
                 {
+                    var path = Path.GetDirectoryName(Application.ExecutablePath) + "\\" + entry.name.Replace("/", "\\");
                     if (isPatchCancelled)
                     {
                         Console.WriteLine("cancellled while deleting");
                         StatusLibrary.Log("Patching cancelled.");
                         return;
                     }
-                    if (!UtilityLibrary.IsPathChild(entry.name))
+                    if (!UtilityLibrary.IsPathChild(path))
                     {
                         StatusLibrary.Log("Path " + entry.name + " might be outside your Everquest directory. Skipping deletion of this file.");
                         continue;
                     }
-                    if (File.Exists(entry.name))
+                    if (File.Exists(path))
                     {
                         StatusLibrary.Log("Deleting " + entry.name + "...");
-                        File.Delete(entry.name);
+                        File.Delete(path);
                     }
                 }
             }
@@ -453,11 +453,11 @@ namespace EQEmu_Patcher
                 {
                     version = version.Substring(0, 8);
                 }
-               
+
                 StatusLibrary.Log($"Up to date with patch {version}.");
                 return;
             }
-            
+
             string elapsed = start.Elapsed.ToString("ss\\.ff");
             StatusLibrary.Log($"Complete! Patched {generateSize(patchedBytes)} in {elapsed} seconds. Press Play to begin.");
             IniLibrary.instance.LastPatchedVersion = filelist.version;
@@ -537,7 +537,7 @@ namespace EQEmu_Patcher
     public class FileList
     {
         public string version { get; set; }
-        
+
         public List<FileEntry> deletes { get; set; }
         public string downloadprefix { get; set; }
         public List<FileEntry> downloads { get; set; }

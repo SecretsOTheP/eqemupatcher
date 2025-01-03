@@ -169,21 +169,26 @@
     <ItemGroup>
       <AssemblyAttributes Include="EQEmu_Patcher.ServerName">
         <_Parameter1>$(SERVER_NAME)</_Parameter1>
+        <_Parameter1_TypeName>System.String</_Parameter1_TypeName>
       </AssemblyAttributes>
       <AssemblyAttributes Include="EQEmu_Patcher.FileListUrl">
         <_Parameter1>$(FILELIST_URL)</_Parameter1>
+        <_Parameter1_TypeName>System.String</_Parameter1_TypeName>
       </AssemblyAttributes>
       <AssemblyAttributes Include="EQEmu_Patcher.PatcherUrl">
         <_Parameter1>$(PATCHER_URL)</_Parameter1>
+        <_Parameter1_TypeName>System.String</_Parameter1_TypeName>
       </AssemblyAttributes>
       <AssemblyAttributes Include="EQEmu_Patcher.FileName">
         <_Parameter1>$(FILE_NAME)</_Parameter1>
+        <_Parameter1_TypeName>System.String</_Parameter1_TypeName>
       </AssemblyAttributes>
       <AssemblyAttributes Include="AssemblyVersion">
         <_Parameter1>$(VERSION)</_Parameter1>
+        <_Parameter1_TypeName>System.String</_Parameter1_TypeName>
       </AssemblyAttributes>
     </ItemGroup>
-    <WriteCodeFragment AssemblyAttributes="@(AssemblyAttributes)" Language="C#" OutputFile="SolutionInfo.cs">
+    <WriteCodeFragment AssemblyAttributes="@(AssemblyAttributes)" Language="C#" OutputFile=".\SolutionInfo.cs">
       <Output TaskParameter="OutputFile" ItemName="Compile" />
       <Output TaskParameter="OutputFile" ItemName="FileWrites" />
     </WriteCodeFragment>

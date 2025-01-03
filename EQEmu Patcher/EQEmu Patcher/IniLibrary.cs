@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
+using System.Windows.Forms;
 
 namespace EQEmu_Patcher
 {
@@ -17,21 +18,21 @@ namespace EQEmu_Patcher
         public VersionTypes ClientVersion { get; set; }
         public string LastPatchedVersion { get; set; }
 
-        
+
         public static void Save()
         {
             var serializerBuilder = new SerializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
             var serializer = serializerBuilder.Build();
             string body = serializer.Serialize(instance);
-            
+
             Console.WriteLine(body);
-            File.WriteAllText(@"eqemupatcher.yml", body);
+            File.WriteAllText($"{System.IO.Path.GetDirectoryName(Application.ExecutablePath)}\\eqemupatcher.yml", body);
         }
 
         public static void Load()
         {
             try {
-                using (var input = File.OpenText("eqemupatcher.yml"))
+                using (var input = File.OpenText($"{System.IO.Path.GetDirectoryName(Application.ExecutablePath)}\\eqemupatcher.yml"))
                 {
                     var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
 
@@ -39,7 +40,7 @@ namespace EQEmu_Patcher
 
                     instance = deserializer.Deserialize<IniLibrary>(input);
                 }
-                                
+
                 if (instance == null) {
                     ResetDefaults();
                     Save();
