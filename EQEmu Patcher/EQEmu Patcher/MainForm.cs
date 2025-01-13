@@ -122,7 +122,7 @@ namespace EQEmu_Patcher
                 IniLibrary.instance.ClientVersion = VersionTypes.Quarm;
                 IniLibrary.Save();
             }
-            string suffix = "quarm";
+            string suffix = "rof";
 
             this.Text = serverName;
             progressBar.Minimum = 0;
