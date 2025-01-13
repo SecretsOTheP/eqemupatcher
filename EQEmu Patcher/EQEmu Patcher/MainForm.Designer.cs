@@ -79,7 +79,7 @@
             // 
             this.splashLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splashLogo.Image = global::EQEmu_Patcher.Properties.Resources.rof;
+            this.splashLogo.Image = global::EQEmu_Patcher.Properties.Resources.quarm_logo2;
             this.splashLogo.Location = new System.Drawing.Point(10, 6);
             this.splashLogo.Margin = new System.Windows.Forms.Padding(0);
             this.splashLogo.MinimumSize = new System.Drawing.Size(400, 450);

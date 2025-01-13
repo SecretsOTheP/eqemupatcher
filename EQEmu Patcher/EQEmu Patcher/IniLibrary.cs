@@ -21,7 +21,7 @@ namespace EQEmu_Patcher
 
         public static void Save()
         {
-            var serializerBuilder = new SerializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
+            var serializerBuilder = new SerializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance);
             var serializer = serializerBuilder.Build();
             string body = serializer.Serialize(instance);
 
@@ -34,7 +34,7 @@ namespace EQEmu_Patcher
             try {
                 using (var input = File.OpenText($"{System.IO.Path.GetDirectoryName(Application.ExecutablePath)}\\eqemupatcher.yml"))
                 {
-                    var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
+                    var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance);
 
                     var deserializer = deserializerBuilder.Build();
 

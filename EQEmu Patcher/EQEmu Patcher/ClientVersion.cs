@@ -9,13 +9,7 @@ namespace EQEmu_Patcher
     public enum VersionTypes
     {
         Unknown,
-        Titanium,
-        Rain_Of_Fear,
-        Rain_Of_Fear_2,
-        Seeds_Of_Destruction,
-        Underfoot,
-        Secrets_Of_Feydwer,
-        Broken_Mirror
+        Quarm
     }
 
     class ClientVersion

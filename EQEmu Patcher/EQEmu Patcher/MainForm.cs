@@ -33,8 +33,6 @@ namespace EQEmu_Patcher
         CancellationTokenSource cts;
         System.Diagnostics.Process process;
 
-        VersionTypes currentVersion;
-
        // TaskbarItemInfo tii = new TaskbarItemInfo();
         public MainForm()
         {
@@ -121,12 +119,12 @@ namespace EQEmu_Patcher
 
             if (IniLibrary.instance.ClientVersion == VersionTypes.Unknown)
             {
-                IniLibrary.instance.ClientVersion = currentVersion;
+                IniLibrary.instance.ClientVersion = VersionTypes.Quarm;
                 IniLibrary.Save();
             }
             string suffix = "quarm";
 
-            this.Text = serverName + " (Client: " + currentVersion.ToString().Replace("_", " ") + ")";
+            this.Text = serverName;
             progressBar.Minimum = 0;
             progressBar.Maximum = 10000;
             progressBar.Value = 0;
@@ -210,7 +208,7 @@ namespace EQEmu_Patcher
 
             using (var input = File.OpenText($"{System.IO.Path.GetDirectoryName(Application.ExecutablePath)}\\filelist.yml"))
             {
-                var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
+                var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance);
 
                 var deserializer = deserializerBuilder.Build();
 
@@ -329,7 +327,7 @@ namespace EQEmu_Patcher
 
             using (var input = File.OpenText($"{System.IO.Path.GetDirectoryName(Application.ExecutablePath)}\\filelist.yml"))
             {
-                var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(new CamelCaseNamingConvention());
+                var deserializerBuilder = new DeserializerBuilder().WithNamingConvention(CamelCaseNamingConvention.Instance);
 
                 var deserializer = deserializerBuilder.Build();
 
