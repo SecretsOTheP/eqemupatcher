@@ -26,7 +26,7 @@
         <Include>EQUI_Templates.xml</Include>
         <Include>EQUI_CharacterCreate.xml</Include>
         <Include>EQUI_BuffWindow.xml</Include>
-		<Include>EQUI_ShortDurationBuffWindow.xml</Include>
+        <Include>EQUI_ShortDurationBuffWindow.xml</Include>
         <Include>EQUI_ChatWindow.xml</Include>
         <Include>EQUI_ConfirmationDialog.xml</Include>
         <Include>EQUI_CharacterSelect.xml</Include>
@@ -57,7 +57,7 @@
         <Include>EQUI_SkillsSelectWindow.xml</Include>
         <Include>EQUI_TradeWnd.xml</Include>
         <Include>EQUI_MerchantWnd.xml</Include>
-		<Include>EQUI_SelectorWnd.xml</Include>
+        <Include>EQUI_SelectorWnd.xml</Include>
         <Include>EQUI_BazaarWnd.xml</Include>
         <Include>EQUI_GiveWnd.xml</Include>
         <Include>EQUI_TrackingWnd.xml</Include>
@@ -78,8 +78,8 @@
         <Include>EQUI_AlarmWnd.xml</Include>        
         <Include>EQUI_RaidWindow.xml</Include>
         <Include>EQUI_RaidOptionsWindow.xml</Include>
-		<Include>EQUI_MusicPlayerWnd.xml</Include>
-		<Include>EQUI_FileSelectionWnd.xml</Include>
+        <Include>EQUI_MusicPlayerWnd.xml</Include>
+        <Include>EQUI_FileSelectionWnd.xml</Include>
     </Composite>
     <Schema xmlns = "EverQuestData" xmlns:dt = "EverQuestDataTypes"/>
 </XML>
