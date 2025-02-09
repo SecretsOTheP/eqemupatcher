@@ -11,6 +11,7 @@
 *.xmi binary
 *.eqg binary
 *.mp3 binary
+*.emt binary
 
 ###############################################################################
 # Set default behavior for command prompt diff.
