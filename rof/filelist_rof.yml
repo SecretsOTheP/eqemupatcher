@@ -1,4 +1,4 @@
-version: 20250214f21d50d9df238bfbe304c1b4124ed4a8
+version: 20250215c25034d3337add808a843220ce3d8254
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -34,9 +34,9 @@ downloads:
   date: "20250214"
   size: 280064
 - name: felwitheb_chr.s3d
-  md5: ac0d4124fb85352a8c0d6a9c7a06cfa4
+  md5: a963c13f336f1e3e50fded87a6fc530b
   date: "20250214"
-  size: 700037
+  size: 2612797
 - name: global4_chr.s3d
   md5: d72deaca2670bb5068505f12466b46e2
   date: "20241226"
