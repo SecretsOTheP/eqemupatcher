@@ -38,17 +38,21 @@ downloads:
   date: "20250214"
   size: 2612797
 - name: global4_chr.s3d
-  md5: d72deaca2670bb5068505f12466b46e2
-  date: "20241226"
-  size: 2459468
+  md5: 4f9292e353429f762ed6d9e5b98b3d1e
+  date: "20250216"
+  size: 2456558
 - name: global6_chr.s3d
-  md5: 14999af7ef736a0431fd28e45088e104
-  date: "20250112"
-  size: 1994958
+  md5: 96f6dd168155bc900f57ccbcb63e3154
+  date: "20250217"
+  size: 1981032
+- name: gequip5.s3d
+  md5: 0bff07d6e0f5abaa8bc87acb39f2ff7b
+  date: "20250217"
+  size: 2769469
 - name: global_chr.s3d
-  md5: ace1e5e336830ed06093f2de2766329d
-  date: "20250112"
-  size: 7416988
+  md5: e9c5cbfa394cd6f26d14e2f01e5bcd7b
+  date: "20250216"
+  size: 7431870
 - name: guk.mp3
   md5: 2e38424f9b312d976b6b08660210c5bc
   date: "20240221"
