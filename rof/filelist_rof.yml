@@ -1,4 +1,4 @@
-version: 202503074ddec13d41b245f7aa8f458e86a2c505
+version: 2025030864152be1d50cfd8f637be75249987245
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -30,8 +30,8 @@ downloads:
   date: "20240221"
   size: 11113082
 - name: eqgame.dll
-  md5: ba228acfb978c25cad42f74ede4f0028
-  date: "20250307"
+  md5: 5f703c1653fc866e21729c4d13dea704
+  date: "20250308"
   size: 288256
 - name: felwitheb_chr.s3d
   md5: a963c13f336f1e3e50fded87a6fc530b
@@ -46,9 +46,9 @@ downloads:
   date: "20250307"
   size: 2456558
 - name: global6_chr.s3d
-  md5: 96f6dd168155bc900f57ccbcb63e3154
-  date: "20250307"
-  size: 1981032
+  md5: acc93fe074fe6c96f5fc3cfac097d223
+  date: "20250308"
+  size: 1363003
 - name: global_chr.s3d
   md5: e9c5cbfa394cd6f26d14e2f01e5bcd7b
   date: "20250307"
