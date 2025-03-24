@@ -121,3 +121,19 @@ downloads:
   md5: 2e829c110b75fde062bd054fac303f49
   date: "20250114"
   size: 5142165
+- name: uifiles\default\EQUI_BankWnd.xml
+  md5: 1fd044b8011016826b920d5e153a546a
+  date: "20250324"
+  size: 23491
+- name: uifiles\default\EQUI_BankGridWnd.xml
+  md5: b382ee4969dd519a4bd85b8689611957
+  date: "20250324"
+  size: 165209
+- name: uifiles\duxaUI\EQUI_BankWnd.xml
+  md5: fcb628a409fb5fdc7bc0bae84a55733c
+  date: "20250324"
+  size: 25591
+- name: uifiles\duxaUI\EQUI_BankGridWnd.xml
+  md5: 7fa2149f297c01bf899bc07d160580b5
+  date: "20250324"
+  size: 166524
