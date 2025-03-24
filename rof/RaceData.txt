@@ -1,3 +1,7 @@
+#Race,Gender,Tag,AnimFallbackTag
+330^0^FRM
+330^1^FRF^FRM
+330^2^FRM
 331^0^TBM
 331^1^TBF
 332^0^FBM
