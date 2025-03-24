@@ -1,4 +1,4 @@
-version: 202502159fbfad6353c12a43000750812d04bbe8
+version: 2025030864152be1d50cfd8f637be75249987245
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -30,25 +30,29 @@ downloads:
   date: "20240221"
   size: 11113082
 - name: eqgame.dll
-  md5: fd858ef526a81ac6a3d4deac82348700
-  date: "20250215"
-  size: 280064
+  md5: 5f703c1653fc866e21729c4d13dea704
+  date: "20250308"
+  size: 288256
 - name: felwitheb_chr.s3d
   md5: a963c13f336f1e3e50fded87a6fc530b
   date: "20250214"
   size: 2612797
+- name: gequip5.s3d
+  md5: 0bff07d6e0f5abaa8bc87acb39f2ff7b
+  date: "20250307"
+  size: 2769469
 - name: global4_chr.s3d
-  md5: d72deaca2670bb5068505f12466b46e2
-  date: "20241226"
-  size: 2459468
+  md5: 4f9292e353429f762ed6d9e5b98b3d1e
+  date: "20250307"
+  size: 2456558
 - name: global6_chr.s3d
-  md5: 14999af7ef736a0431fd28e45088e104
-  date: "20250112"
-  size: 1994958
+  md5: acc93fe074fe6c96f5fc3cfac097d223
+  date: "20250308"
+  size: 1363003
 - name: global_chr.s3d
-  md5: ace1e5e336830ed06093f2de2766329d
-  date: "20250112"
-  size: 7416988
+  md5: e9c5cbfa394cd6f26d14e2f01e5bcd7b
+  date: "20250307"
+  size: 7431870
 - name: guk.mp3
   md5: 2e38424f9b312d976b6b08660210c5bc
   date: "20240221"
@@ -121,3 +125,19 @@ downloads:
   md5: 18a0152679e587eb418ef6c7e9bee6e3
   date: "20250114"
   size: 4245092
+- name: uifiles\default\EQUI_BankWnd.xml
+  md5: 1fd044b8011016826b920d5e153a546a
+  date: "20250324"
+  size: 23491
+- name: uifiles\default\EQUI_BankGridWnd.xml
+  md5: b382ee4969dd519a4bd85b8689611957
+  date: "20250324"
+  size: 165209
+- name: uifiles\duxaUI\EQUI_BankWnd.xml
+  md5: fcb628a409fb5fdc7bc0bae84a55733c
+  date: "20250324"
+  size: 25591
+- name: uifiles\duxaUI\EQUI_BankGridWnd.xml
+  md5: 7fa2149f297c01bf899bc07d160580b5
+  date: "20250324"
+  size: 166524
