@@ -2,9 +2,9 @@ version: 2025030864152be1d50cfd8f637be75249987245
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
-  md5: 355c060172b8f974ce9fbaad6249e337
-  date: "20250114"
-  size: 768
+  md5: 9f326b81f8c35bc7654d85c6e4366fa1
+  date: "20250324"
+  size: 839
 - name: ZoneData.txt
   md5: 33d8744f1ae082dcc652e32ae21ec622
   date: "20250114"
@@ -121,6 +121,10 @@ downloads:
   md5: 2e829c110b75fde062bd054fac303f49
   date: "20250114"
   size: 5142165
+- name: globalfroglok_chr.s3d
+  md5: 18a0152679e587eb418ef6c7e9bee6e3
+  date: "20250114"
+  size: 4245092
 - name: uifiles\default\EQUI_BankWnd.xml
   md5: 1fd044b8011016826b920d5e153a546a
   date: "20250324"
