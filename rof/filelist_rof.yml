@@ -1,4 +1,4 @@
-version: 2025030864152be1d50cfd8f637be75249987245
+version: 20250324304f9abfefb04b3cb931d83c3c802bdc
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -30,9 +30,9 @@ downloads:
   date: "20240221"
   size: 11113082
 - name: eqgame.dll
-  md5: 5f703c1653fc866e21729c4d13dea704
-  date: "20250308"
-  size: 288256
+  md5: a748e2d1cc80d79249dff186d02360ae
+  date: "20250324"
+  size: 304640
 - name: felwitheb_chr.s3d
   md5: a963c13f336f1e3e50fded87a6fc530b
   date: "20250214"
@@ -53,6 +53,10 @@ downloads:
   md5: e9c5cbfa394cd6f26d14e2f01e5bcd7b
   date: "20250307"
   size: 7431870
+- name: globalfroglok_chr.s3d
+  md5: 18a0152679e587eb418ef6c7e9bee6e3
+  date: "20250324"
+  size: 4245092
 - name: guk.mp3
   md5: 2e38424f9b312d976b6b08660210c5bc
   date: "20240221"
@@ -109,10 +113,26 @@ downloads:
   md5: 1ff5cd1ee41d45307cd27b8be846808d
   date: "20250209"
   size: 3929
+- name: uifiles\default\EQUI_BankGridWnd.xml
+  md5: b382ee4969dd519a4bd85b8689611957
+  date: "20250324"
+  size: 165209
+- name: uifiles\default\EQUI_BankWnd.xml
+  md5: 1fd044b8011016826b920d5e153a546a
+  date: "20250324"
+  size: 23491
 - name: uifiles\default\EQUI_ShortDurationBuffWindow.xml
   md5: bad11bd215a2713b4468220852bb2643
   date: "20250209"
   size: 5010
+- name: uifiles\duxaUI\EQUI_BankGridWnd.xml
+  md5: 7fa2149f297c01bf899bc07d160580b5
+  date: "20250324"
+  size: 166524
+- name: uifiles\duxaUI\EQUI_BankWnd.xml
+  md5: fcb628a409fb5fdc7bc0bae84a55733c
+  date: "20250324"
+  size: 25591
 - name: uifiles\duxaUI\EQUI_ShortDurationBuffWindow.xml
   md5: b9f24f1441a2c19f40402a8225ff064a
   date: "20250209"
@@ -121,23 +141,3 @@ downloads:
   md5: 2e829c110b75fde062bd054fac303f49
   date: "20250114"
   size: 5142165
-- name: globalfroglok_chr.s3d
-  md5: 18a0152679e587eb418ef6c7e9bee6e3
-  date: "20250114"
-  size: 4245092
-- name: uifiles\default\EQUI_BankWnd.xml
-  md5: 1fd044b8011016826b920d5e153a546a
-  date: "20250324"
-  size: 23491
-- name: uifiles\default\EQUI_BankGridWnd.xml
-  md5: b382ee4969dd519a4bd85b8689611957
-  date: "20250324"
-  size: 165209
-- name: uifiles\duxaUI\EQUI_BankWnd.xml
-  md5: fcb628a409fb5fdc7bc0bae84a55733c
-  date: "20250324"
-  size: 25591
-- name: uifiles\duxaUI\EQUI_BankGridWnd.xml
-  md5: 7fa2149f297c01bf899bc07d160580b5
-  date: "20250324"
-  size: 166524
