@@ -105,6 +105,14 @@ downloads:
   md5: 9490275c35eaa490a135dda1ffebfb74
   date: "20240221"
   size: 76149
+- name: lgequip.s3d
+  md5: 3d0cf9ce1b72f41b94c9e1c45fd9e8c4
+  date: "20250329"
+  size: 9242677
+- name: quarmclient.ini
+  md5: 14fdcfd1a9c7fbdafeedadbe8473e652
+  date: "20250329"
+  size: 172
 - name: spells_en.txt
   md5: 6dc392b7cb1203254728ff9079d557b3
   date: "20241217"
