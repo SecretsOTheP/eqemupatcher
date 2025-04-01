@@ -1,4 +1,4 @@
-version: 20250325d36baeb69d098813653057ca3e07f803
+version: 20250331f88e916acd55b91769127d8c886eb140
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -6,9 +6,9 @@ downloads:
   date: "20250324"
   size: 839
 - name: ZoneData.txt
-  md5: 33d8744f1ae082dcc652e32ae21ec622
-  date: "20250114"
-  size: 110
+  md5: 4ae4308d31168747fb44153eb711a3eb
+  date: "20250331"
+  size: 151
 - name: dulak.emt
   md5: 8818d9403613c251e986eb42f7d18dd8
   date: "20240221"
@@ -30,9 +30,9 @@ downloads:
   date: "20240221"
   size: 11113082
 - name: eqgame.dll
-  md5: d2788220e9e8359c505ec96a51d72274
-  date: "20250325"
-  size: 304640
+  md5: 3ce1a95239257c65e2ada533d21ad5d8
+  date: "20250331"
+  size: 306176
 - name: felwitheb_chr.s3d
   md5: a963c13f336f1e3e50fded87a6fc530b
   date: "20250214"
@@ -105,13 +105,33 @@ downloads:
   md5: 9490275c35eaa490a135dda1ffebfb74
   date: "20240221"
   size: 76149
+- name: iceclad2.s3d
+  md5: d38d5e49c9f1a7f9970c7fa5e16260ad
+  date: "20250331"
+  size: 8251982
+- name: iceclad2_2_obj.s3d
+  md5: c4eb37cc6d6917cf9889d0352ce776b8
+  date: "20250331"
+  size: 269691
+- name: iceclad2_chr.s3d
+  md5: 76bf7216650be6b5ffa7151afaac5e28
+  date: "20250331"
+  size: 3745718
+- name: iceclad2_chr2.s3d
+  md5: 5838b69ca1e943ec2971aa14bdd2965e
+  date: "20250331"
+  size: 472842
+- name: iceclad2_obj.s3d
+  md5: e221c1c2642c00edf80e1dafb794a42f
+  date: "20250331"
+  size: 1835382
 - name: lgequip.s3d
   md5: 3d0cf9ce1b72f41b94c9e1c45fd9e8c4
-  date: "20250329"
+  date: "20250331"
   size: 9242677
 - name: quarmclient.ini
   md5: 14fdcfd1a9c7fbdafeedadbe8473e652
-  date: "20250329"
+  date: "20250331"
   size: 172
 - name: spells_en.txt
   md5: 6dc392b7cb1203254728ff9079d557b3
