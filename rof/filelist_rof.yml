@@ -1,4 +1,4 @@
-version: 20250401e7c6820c8ce8848e230ce96631f96d81
+version: 20250401b80509d9e87d0032c4e69a80a958c241
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -6,9 +6,9 @@ downloads:
   date: "20250324"
   size: 839
 - name: ZoneData.txt
-  md5: 4ae4308d31168747fb44153eb711a3eb
-  date: "20250331"
-  size: 151
+  md5: 932489258f3819b429dd359ec0035ef8
+  date: "20250401"
+  size: 149
 - name: dulak.emt
   md5: 8818d9403613c251e986eb42f7d18dd8
   date: "20240221"
