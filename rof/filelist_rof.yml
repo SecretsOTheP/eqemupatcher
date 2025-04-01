@@ -1,4 +1,4 @@
-version: 20250331f88e916acd55b91769127d8c886eb140
+version: 20250401e7c6820c8ce8848e230ce96631f96d81
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -130,9 +130,9 @@ downloads:
   date: "20250331"
   size: 9242677
 - name: quarmclient.ini
-  md5: 14fdcfd1a9c7fbdafeedadbe8473e652
-  date: "20250331"
-  size: 172
+  md5: b842bebf6c7a33584c728343dbebc886
+  date: "20250401"
+  size: 170
 - name: spells_en.txt
   md5: 6dc392b7cb1203254728ff9079d557b3
   date: "20241217"
