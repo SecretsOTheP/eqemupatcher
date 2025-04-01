@@ -12,7 +12,7 @@
 *.eqg binary
 *.mp3 binary
 *.emt binary
-*.ini binary
+*.ini astextplain
 
 ###############################################################################
 # Set default behavior for command prompt diff.
