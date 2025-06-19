@@ -1,4 +1,4 @@
-version: 202506190315328c2e58fdc03c3ceccd2fbd9040
+version: 20250619d039904dcc66f36342291a6eeabadc0c
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -9,6 +9,10 @@ downloads:
   md5: 932489258f3819b429dd359ec0035ef8
   date: "20250401"
   size: 149
+- name: dpvs.dll
+  md5: 86998e2c096887a6b9dd5a72cfc49aa0
+  date: "20250619"
+  size: 160256
 - name: dulak.emt
   md5: 8818d9403613c251e986eb42f7d18dd8
   date: "20240221"
