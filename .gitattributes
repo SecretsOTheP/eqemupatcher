@@ -11,7 +11,7 @@
 *.xmi binary
 *.eqg binary
 *.mp3 binary
-*.emt binary
+*.emt text
 *.ini binary
 
 ###############################################################################
