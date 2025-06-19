@@ -50,9 +50,9 @@ downloads:
   date: "20250308"
   size: 1363003
 - name: global_chr.s3d
-  md5: e9c5cbfa394cd6f26d14e2f01e5bcd7b
-  date: "20250307"
-  size: 7431870
+  md5: f18dfa70cbfa8705294d04d46fdf909b
+  date: "20250607"
+  size: 7460498
 - name: globalfroglok_chr.s3d
   md5: 18a0152679e587eb418ef6c7e9bee6e3
   date: "20250324"
