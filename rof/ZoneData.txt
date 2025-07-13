@@ -1,4 +1,1 @@
-224^gunthak^Gulf of Gunthak^4048^4^0^0
-225^dulak^Dulak's Harbor^4049^4^0^0
-229^guka^Deepest Gukta^2247^7^0^0
-230^iceclad2^Iceclad Ocean^2350^4^0^0
+230^iceclad2^DISABLED DONTUSE^2350^4^0^0
