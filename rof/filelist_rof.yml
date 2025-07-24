@@ -1,4 +1,4 @@
-version: 202507137a01207696b6ce5c4e60f316b2be1535
+version: 2025072453e3c0be7d88196010aa8e2703a30d6d
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -53,3 +53,7 @@ downloads:
   md5: b9f24f1441a2c19f40402a8225ff064a
   date: "20250209"
   size: 12536
+- name: veksar_chr.s3d
+  md5: 2e829c110b75fde062bd054fac303f49
+  date: "20250724"
+  size: 5142165
