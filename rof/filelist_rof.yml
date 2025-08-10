@@ -1,4 +1,4 @@
-version: 2025072453e3c0be7d88196010aa8e2703a30d6d
+version: 20250810470421b00f71bd7cd609f87271fce1e2
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -14,17 +14,17 @@ downloads:
   date: "20250619"
   size: 160256
 - name: eqgame.dll
-  md5: bae1f047458caed3283d6d27ef6124ee
-  date: "20250713"
+  md5: e54b294c3385cdc73218812ad7609f6d
+  date: "20250810"
   size: 313344
 - name: quarmclient.ini
   md5: b842bebf6c7a33584c728343dbebc886
   date: "20250401"
   size: 170
 - name: spells_en.txt
-  md5: 6dc392b7cb1203254728ff9079d557b3
-  date: "20241217"
-  size: 1897725
+  md5: 9812be1e3d82f5ca2046b7075b6a2f94
+  date: "20250810"
+  size: 1909400
 - name: uifiles\default\EQUI.xml
   md5: 1ff5cd1ee41d45307cd27b8be846808d
   date: "20250209"
