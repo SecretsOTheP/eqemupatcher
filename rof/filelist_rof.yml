@@ -1,4 +1,4 @@
-version: 202511034b6a64cb61584e2302e6e6967b4ef0c2
+version: 202602181dc65a7e7f95f074fccbd128c1ef4139
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -14,9 +14,9 @@ downloads:
   date: "20250619"
   size: 160256
 - name: eqgame.dll
-  md5: 9ad1501435558514b2bd83d1b078a897
-  date: "20251022"
-  size: 310784
+  md5: 3739d72cfad614bf29f41c5701707ef1
+  date: "20260218"
+  size: 313856
 - name: quarmclient.ini
   md5: b842bebf6c7a33584c728343dbebc886
   date: "20250401"
