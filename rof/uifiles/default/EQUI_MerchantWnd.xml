@@ -1532,7 +1532,7 @@
 		<BottomAnchorOffset>120</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
-		<Text>Item Being Considered</Text>
+		<Text></Text>
 		<TextColor>
 				<R>255</R>
 				<G>255</G>
@@ -1554,7 +1554,7 @@
 		<BottomAnchorOffset>100</BottomAnchorOffset>
 		<TopAnchorToTop>false</TopAnchorToTop>
 		<BottomAnchorToTop>false</BottomAnchorToTop>
-		<Text>Item Being Considered</Text>
+		<Text></Text>
 		<TextColor>
 				<R>255</R>
 				<G>255</G>
