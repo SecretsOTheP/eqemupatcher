@@ -1,4 +1,4 @@
-version: 2026032505a61948690c7b94f3df9dab246a4390
+version: 2026032561ccc9447bfb0e6cc76deef1dcf84677
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
@@ -14,9 +14,9 @@ downloads:
   date: "20250619"
   size: 160256
 - name: eqgame.dll
-  md5: 60ac0b229c5e9c1ddd8cc085468d8c5a
+  md5: 176ed594c273283a94d8b20abfb45b99
   date: "20260325"
-  size: 320000
+  size: 310272
 - name: eqw.dll
   md5: d59cc63a5f569a848f6dadbdbeb9b6ed
   date: "20260325"
@@ -41,6 +41,10 @@ downloads:
   md5: 1fd044b8011016826b920d5e153a546a
   date: "20250324"
   size: 23491
+- name: uifiles\default\EQUI_MerchantWnd.xml
+  md5: 8befc1ff4c7964e705f465d9be873ee5
+  date: "20260325"
+  size: 43152
 - name: uifiles\default\EQUI_ShortDurationBuffWindow.xml
   md5: bad11bd215a2713b4468220852bb2643
   date: "20250209"
