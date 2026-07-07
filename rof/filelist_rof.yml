@@ -1,67 +1,67 @@
-version: 2026032561ccc9447bfb0e6cc76deef1dcf84677
+version: 202607076a26de22d186ee831fcb597663628488
 downloadprefix: http://projectquarm.com/rof/
 downloads:
 - name: RaceData.txt
   md5: 775b3b39a1157738e0ff1d8bae5f787f
-  date: "20250713"
+  date: "20260707"
   size: 802
 - name: ZoneData.txt
   md5: 35c814afcdb37f24ed63bf3d22083b1f
-  date: "20250713"
+  date: "20260707"
   size: 40
 - name: dpvs.dll
   md5: 86998e2c096887a6b9dd5a72cfc49aa0
-  date: "20250619"
+  date: "20260707"
   size: 160256
 - name: eqgame.dll
-  md5: 176ed594c273283a94d8b20abfb45b99
-  date: "20260325"
-  size: 310272
+  md5: d45c9b22bbffe072519c108207319abe
+  date: "20260707"
+  size: 318464
 - name: eqw.dll
   md5: d59cc63a5f569a848f6dadbdbeb9b6ed
-  date: "20260325"
+  date: "20260707"
   size: 84480
 - name: quarmclient.ini
   md5: b842bebf6c7a33584c728343dbebc886
-  date: "20250401"
+  date: "20260707"
   size: 170
 - name: spells_en.txt
   md5: 9812be1e3d82f5ca2046b7075b6a2f94
-  date: "20250810"
+  date: "20260707"
   size: 1909400
 - name: uifiles\default\EQUI.xml
   md5: 1ff5cd1ee41d45307cd27b8be846808d
-  date: "20250209"
+  date: "20260707"
   size: 3929
 - name: uifiles\default\EQUI_BankGridWnd.xml
   md5: b382ee4969dd519a4bd85b8689611957
-  date: "20250324"
+  date: "20260707"
   size: 165209
 - name: uifiles\default\EQUI_BankWnd.xml
   md5: 1fd044b8011016826b920d5e153a546a
-  date: "20250324"
+  date: "20260707"
   size: 23491
 - name: uifiles\default\EQUI_MerchantWnd.xml
   md5: 8befc1ff4c7964e705f465d9be873ee5
-  date: "20260325"
+  date: "20260707"
   size: 43152
 - name: uifiles\default\EQUI_ShortDurationBuffWindow.xml
   md5: bad11bd215a2713b4468220852bb2643
-  date: "20250209"
+  date: "20260707"
   size: 5010
 - name: uifiles\duxaUI\EQUI_BankGridWnd.xml
   md5: 7fa2149f297c01bf899bc07d160580b5
-  date: "20250324"
+  date: "20260707"
   size: 166524
 - name: uifiles\duxaUI\EQUI_BankWnd.xml
   md5: fcb628a409fb5fdc7bc0bae84a55733c
-  date: "20250324"
+  date: "20260707"
   size: 25591
 - name: uifiles\duxaUI\EQUI_ShortDurationBuffWindow.xml
   md5: b9f24f1441a2c19f40402a8225ff064a
-  date: "20250209"
+  date: "20260707"
   size: 12536
 - name: veksar_chr.s3d
   md5: 2e829c110b75fde062bd054fac303f49
-  date: "20250724"
+  date: "20260707"
   size: 5142165
